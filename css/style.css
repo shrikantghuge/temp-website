@@ -316,12 +316,64 @@ h6,
 }
 
 
+/*** Modern Features ***/
+.feature-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    color: var(--dark);
+    position: relative;
+    display: inline-block;
+}
+
+.feature-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+}
+
+.gif-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-gif {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.feature-gif:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .feature-gif {
+        max-width: 100%;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+    }
+}
+
 /*** Service ***/
 .service-item {
     position: relative;
     height: 300px;
     padding: 0 30px;
     transition: .5s;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .service-item .service-icon {
