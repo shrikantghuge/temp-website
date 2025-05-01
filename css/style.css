@@ -341,16 +341,7 @@ h6,
     }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-}
+/*Removed carousel controls*/
 
 
 /*** Section Title ***/
@@ -688,4 +679,15 @@ h6,
     height: 60px;
     margin-bottom: 1rem;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+.bg-primary.rounded {
+    background: linear-gradient(145deg, #2B4C7E 0%, #567EBF 100%) !important;
+    width: 60px;
+    height: 60px;
+}
+
+.bg-primary.rounded.h-100 {
+    background: linear-gradient(145deg, #2B4C7E 0%, #567EBF 100%) !important;
+    align-items: center;
 }
