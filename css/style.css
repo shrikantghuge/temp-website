@@ -160,18 +160,49 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-dark {
         position: relative;
-        background: #FFFFFF;
+        background: var(--dark);
+        padding: 10px 0;
     }
 
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.show,
     .sticky-top.navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
-        color: var(--dark);
+        padding: 8px 15px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .navbar-dark .navbar-brand {
+        padding: 0 15px;
     }
 
     .navbar-dark .navbar-brand h1 {
-        color: var(--primary);
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .navbar-dark .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    .carousel-caption {
+        background: var(--dark);
+        padding: 1rem !important;
+    }
+
+    .btn-primary, .btn-outline-light {
+        padding: 0.5rem 1.5rem !important;
+        margin: 0.5rem !important;
+        display: inline-block;
+    }
+
+    #header-carousel .carousel-item img {
+        display: none;
+    }
+
+    #header-carousel .carousel-item {
+        min-height: auto;
+        background: var(--dark);
     }
 }
 
