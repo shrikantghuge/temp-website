@@ -127,13 +127,15 @@ h6,
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
-    margin-left: 25px;
-    padding: 35px 0;
+    margin-left: 35px;
+    padding: 25px 0;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     outline: none;
     transition: .5s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
@@ -234,15 +236,43 @@ h6,
     text-align: center;
 }
 
-.carousel-caption h5 {
-    font-size: 1.5rem;
-    font-weight: 600 !important;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #fff, #06A3DA);
+.text-gradient {
+    background: linear-gradient(120deg, #ffffff, #06A3DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.75rem;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.text-gradient-primary {
+    background: linear-gradient(120deg, #ffffff, #34AD54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 800 !important;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.carousel-caption {
+    background: linear-gradient(145deg, rgba(0,13,32,0.85) 0%, rgba(6,163,218,0.85) 100%);
+    padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    .text-gradient {
+        font-size: 1.25rem;
+    }
+    
+    .text-gradient-primary {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-caption {
+        padding: 2rem 1rem;
+    }
 }
 
 .carousel-caption h1 {
@@ -376,11 +406,18 @@ h6,
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(6,163,218,0.15);
-    margin: 2rem 0;
+    box-shadow: 0 20px 50px rgba(6,163,218,0.2);
+    margin: 2rem auto;
     width: 100%;
+    max-width: 1200px;
     background: linear-gradient(145deg, #ffffff, #f8f9fa);
-    padding: 1rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .gif-container {
+        margin: 3rem auto;
+    }
 }
 
 .feature-gif {
