@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #34AD54;
-    --light: #EEF9FF;
-    --dark: #091E3E;
+    --primary: #2B4C7E;
+    --secondary: #567EBF;
+    --light: #EEF3FF;
+    --dark: #1A2C4E;
 }
 
 
@@ -260,7 +260,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(145deg, rgba(0,13,32,0.9) 0%, rgba(6,163,218,0.8) 100%);
+    background: linear-gradient(145deg, rgba(27,44,78,0.9) 0%, rgba(86,126,191,0.8) 100%);
     z-index: 1;
     display: flex;
     align-items: center;
@@ -268,7 +268,7 @@ h6,
 }
 
 .text-gradient {
-    background: linear-gradient(120deg, #ffffff, #06A3DA);
+    background: linear-gradient(120deg, #ffffff, #567EBF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.75rem;
@@ -679,7 +679,7 @@ h6,
 }
 
 .facts .col-lg-4:nth-child(3) .bg-primary {
-    background: linear-gradient(145deg, #34AD54 0%, #06A3DA 100%) !important;
+    background: linear-gradient(145deg, #2B4C7E 0%, #567EBF 100%) !important;
     border-radius: 15px;
 }
 
