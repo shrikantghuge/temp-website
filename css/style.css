@@ -652,8 +652,28 @@ h6,
 /* Prevent the div from shrinking */
 .bg-white.d-flex.align-items-center.justify-content-center.rounded.mb-2 {
     flex-shrink: 0; /* Prevents the div from shrinking */
-    width: 100px; /* Set a fixed width (adjust as needed) */
-    height: 100px; /* Set a fixed height (adjust as needed) */
+    width: 60px; /* Set a fixed width (adjust as needed) */
+    height: 60px; /* Set a fixed height (adjust as needed) */
+    margin: auto;
+}
+
+.bg-white.d-flex i {
+    font-size: 24px;
+}
+
+@media (max-width: 576px) {
+    .row.g-3 {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .col-xl-12 {
+        padding: 0;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
 }
 
 .bg-gradient-primary {
