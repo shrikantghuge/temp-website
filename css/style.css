@@ -215,7 +215,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-dark {
         position: fixed;
         background: #FFFFFF;
@@ -296,11 +296,11 @@ h6,
     .text-gradient {
         font-size: 1.25rem;
     }
-    
+
     .text-gradient-primary {
         font-size: 2.5rem;
     }
-    
+
     .carousel-caption {
         padding: 2rem 1rem;
     }
@@ -320,7 +320,7 @@ h6,
     .carousel-caption {
         padding: 1rem;
     }
-    
+
     .carousel-caption h5 {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -330,11 +330,11 @@ h6,
         font-size: 1.75rem;
         margin-bottom: 1.5rem;
     }
-    
+
     #header-carousel .carousel-item {
         min-height: 100vh;
     }
-    
+
     #header-carousel .carousel-item img {
         height: 100vh;
         object-fit: cover;
@@ -468,7 +468,7 @@ h6,
         margin: 1.5rem 0;
         padding: 0.75rem;
     }
-    
+
     .feature-title {
         font-size: 1.5rem;
     }
@@ -656,8 +656,6 @@ h6,
     .footer-about {
         margin-bottom: -75px;
     }
-   
-   
 }
 
 /* Prevent the div from shrinking */
@@ -665,4 +663,29 @@ h6,
     flex-shrink: 0; /* Prevents the div from shrinking */
     width: 100px; /* Set a fixed width (adjust as needed) */
     height: 100px; /* Set a fixed height (adjust as needed) */
+}
+
+.bg-gradient-primary {
+    transition: transform 0.3s ease;
+}
+
+.bg-gradient-primary:hover {
+    transform: translateY(-5px);
+}
+
+.facts .col-lg-4:nth-child(2) .bg-light {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%) !important;
+    border-radius: 15px;
+}
+
+.facts .col-lg-4:nth-child(3) .bg-primary {
+    background: linear-gradient(145deg, #34AD54 0%, #06A3DA 100%) !important;
+    border-radius: 15px;
+}
+
+.conversion-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
 }
