@@ -227,19 +227,56 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(0 13 32);
+    background: linear-gradient(145deg, rgba(0,13,32,0.9) 0%, rgba(6,163,218,0.8) 100%);
     z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #fff, #06A3DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 800 !important;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #fff, #34AD54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 576px) {
+    .carousel-caption {
+        padding: 1rem;
+    }
+    
     .carousel-caption h5 {
-        font-size: 14px;
-        font-weight: 500 !important;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .carousel-caption h1 {
-        font-size: 22px;
-        font-weight: 400 !important;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #header-carousel .carousel-item {
+        min-height: 100vh;
+    }
+    
+    #header-carousel .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
     }
 }
 
@@ -338,17 +375,20 @@ h6,
 .gif-container {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(6,163,218,0.15);
+    margin: 2rem 0;
+    width: 100%;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    padding: 1rem;
 }
 
 .feature-gif {
     width: 100%;
-    max-width: 600px;
     height: auto;
     display: block;
-    margin: 0 auto;
     transition: transform 0.3s ease;
+    border-radius: 8px;
 }
 
 .feature-gif:hover {
@@ -356,8 +396,9 @@ h6,
 }
 
 @media (max-width: 768px) {
-    .feature-gif {
-        max-width: 100%;
+    .gif-container {
+        margin: 1.5rem 0;
+        padding: 0.75rem;
     }
     
     .feature-title {
